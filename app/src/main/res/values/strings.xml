@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">RicksAnimationApi</string>
+    <string name="character_name">Character Name</string>
+    <string name="status">Status</string>
+    <string name="dead_or_alive" />
+    <string name="last_known_location">Last known location:</string>
+    <string name="earth_replacement_dimension">Earth (Replacement Dimension)</string>
+    <string name="iv_character">ImageView Character</string>
+    <string name="characters">Characters</string>
+
+    <string name="iv_character_detail">ImageView Character Detail</string>
+    <string name="species">Species</string>
+    <string name="type">Type</string>
+    <string name="humanoid">Humanoid</string>
+    <string name="rick_s_toxic_side">Rick\'s Toxic Side</string>
+    <string name="load_characters">Load Characters</string>
+    <string name="download_all_data">Download all Data</string>
 </resources>
