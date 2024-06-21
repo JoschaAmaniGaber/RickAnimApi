@@ -15,4 +15,8 @@
     <string name="rick_s_toxic_side">Rick\'s Toxic Side</string>
     <string name="load_characters">Load Characters</string>
     <string name="download_all_data">Download all Data</string>
+    <string name="bt_welcome_amani">Button Welcome Amani</string>
+    <string name="bt_welcome_rick">Button Welcome Rick</string>
+    <string name="iv_welcome_rick">ImageView Welcome Rick</string>
+    <string name="iv_welcome_amani">ImageView Welcome Amani</string>
 </resources>
