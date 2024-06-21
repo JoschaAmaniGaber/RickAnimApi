@@ -3,11 +3,15 @@
 
     <gradient
         android:startColor="@color/grad_start_prime"
-        android:centerColor="@color/grad_center_prime"
+        android:centerColor="@color/primary"
         android:endColor="@color/grad_end_prime"
         android:angle="225" />
 
-    <corners
-        android:radius="@dimen/radius_l_88" />
+    <stroke
+        android:color="@color/primary"
+        android:width="3dp" />
+
+    <corners android:radius="8dp" />
+
 
 </shape>
