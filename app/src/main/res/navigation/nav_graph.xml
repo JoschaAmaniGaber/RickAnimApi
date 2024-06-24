@@ -12,11 +12,36 @@
         tools:layout="@layout/fragment_welcome" >
         <action
             android:id="@+id/to_amaniDuniaFragment"
-            app:destination="@id/amaniDuniaFragment" />
+            app:destination="@id/amaniDuniaFragment"
+            app:enterAnim="@anim/scale_up_from_down_left"
+            app:exitAnim="@anim/scale_down_to_down_left"
+            app:popEnterAnim="@anim/scale_up_from_down_left"
+            app:popExitAnim="@anim/scale_down_to_down_left" />
+        <action
+            android:id="@+id/to_rickDbCheckFragment"
+            app:destination="@id/rickDbCheckFragment"
+            app:enterAnim="@anim/scale_up_from_up_left"
+            app:exitAnim="@anim/scale_down_to_up_left"
+            app:popEnterAnim="@anim/scale_up_from_up_left"
+            app:popExitAnim="@anim/scale_down_to_up_left" />
     </fragment>
+
     <fragment
         android:id="@+id/amaniDuniaFragment"
         android:name="de.example.ricksanimationapi.ui.AmaniDuniaFragment"
         android:label="AmaniDuniaFragment"
         tools:layout="@layout/fragment_amani_dunia"/>
+
+    <fragment
+        android:id="@+id/rickDbCheckFragment"
+        android:name="de.example.ricksanimationapi.ui.RickDbCheckFragment"
+        android:label="RickDbCheckFragment"
+        tools:layout="@layout/fragment_rick_db_check"/>
+
+    <action
+        android:id="@+id/action_nav_graph_self"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 </navigation>

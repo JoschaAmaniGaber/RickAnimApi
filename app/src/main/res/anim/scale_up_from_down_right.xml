@@ -4,7 +4,7 @@
     <alpha
         android:fromAlpha="0"
         android:toAlpha="1"
-        android:duration="@integer/anim_scale_up" />
+        android:duration="@integer/anim_fast" />
 
     <scale
         android:fromYScale="0"
@@ -13,6 +13,6 @@
         android:toXScale="1"
         android:pivotX="100%"
         android:pivotY="100%"
-        android:duration="@integer/anim_scale_up" />
+        android:duration="@integer/anim_fast" />
 
 </set>

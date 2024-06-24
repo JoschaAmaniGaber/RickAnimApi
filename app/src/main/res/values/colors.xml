@@ -4,6 +4,7 @@
     <color name="white">#F8F8F8</color>
     <color name="gray">#888888</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="transparent2">#88FFFFFF</color>
 
     <!-- inklusive Dark Mode -->
     <color name="syntax">#060F38</color>
