@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import de.example.ricksanimationapi.anims.animMode
+import de.example.ricksanimationapi.anims.animRoundStartVerySlow
+import de.example.ricksanimationapi.anims.animsRoundFast
 import de.example.ricksanimationapi.databinding.FragmentAmaniDuniaBinding
 
 class AmaniDuniaFragment : Fragment() {
@@ -24,24 +27,24 @@ class AmaniDuniaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        startAnimBtBg()
+        if (animMode) startAnim()
+        else noAnim()
     }
 
-    private fun startAnimBtBg() {
+    private fun noAnim() {
+        binding.clRickDbBgNoAnim.alpha = 1f
+    }
 
-        val anim1: AnimationDrawable = binding.cl.background as AnimationDrawable
-        val anim2: AnimationDrawable = binding.constraintLayout.background as AnimationDrawable
+    private fun startAnim() {
+
+        val animDetails: AnimationDrawable = binding.clAmaniDetails.background as AnimationDrawable
         val animHeader: AnimationDrawable = binding.clAmaniHeader.background as AnimationDrawable
+        val animLinks: AnimationDrawable = binding.clAmaniLinks.background as AnimationDrawable
+        val animList: List<AnimationDrawable> = listOf(animDetails, animLinks, animHeader)
+        animsRoundFast(animList)
 
-        val animWelcomeList: List<AnimationDrawable> = listOf(animHeader, anim2, anim1)
-        var anim: AnimationDrawable
-
-        repeat(animWelcomeList.size) {
-            anim = animWelcomeList[it]
-            anim.setEnterFadeDuration(8)
-            anim.setExitFadeDuration(8888)
-            anim.start()
-        }
+        val animDbBgInside: AnimationDrawable = binding.clRickDbBgInside.background as AnimationDrawable
+        animRoundStartVerySlow(animDbBgInside)
     }
+
 }

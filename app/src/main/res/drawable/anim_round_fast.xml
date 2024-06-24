@@ -4,35 +4,35 @@
 
     <item
         android:drawable="@drawable/gradient_prime_1"
-        android:duration="@integer/anim_amani_dunia" />
+        android:duration="@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_2"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_3"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_4"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_5"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_6"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_7"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
     <item
         android:drawable="@drawable/gradient_prime_8"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_fast" />
 
 
 </animation-list>

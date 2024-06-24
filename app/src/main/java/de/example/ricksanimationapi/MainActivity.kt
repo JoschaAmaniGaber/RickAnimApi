@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import de.example.ricksanimationapi.anims.animLinearStartVerySlow
+import de.example.ricksanimationapi.anims.animMode
 import de.example.ricksanimationapi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
@@ -21,10 +24,17 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        val bg_anim_main: AnimationDrawable = binding.root.background as AnimationDrawable
-        bg_anim_main.setEnterFadeDuration(8)
-        bg_anim_main.setExitFadeDuration(2222)
-        bg_anim_main.start()
+        if (animMode) startAnim()
+        else noAnim()
+    }
+
+    private fun noAnim() {
+        binding.animMainBg.alpha = 0f
+    }
+
+    private fun startAnim() {
+        val animBg: AnimationDrawable = binding.animMainBg.background as AnimationDrawable
+        animLinearStartVerySlow(animBg)
     }
 
 }

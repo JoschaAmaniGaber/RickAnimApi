@@ -4,15 +4,15 @@
 
     <item
         android:drawable="@drawable/gradient_linear_1"
-        android:duration="@integer/anim_amani_dunia" />
+        android:duration="@integer/anim_very_slow" />
 
     <item
         android:drawable="@drawable/gradient_linear_3"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_very_slow" />
 
     <item
         android:drawable="@drawable/gradient_linear_2"
-        android:duration= "@integer/anim_amani_dunia" />
+        android:duration= "@integer/anim_very_slow" />
 
 
 
