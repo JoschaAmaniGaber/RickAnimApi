@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/gradient_radial_prime_1"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_2"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_3"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_4"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_5"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_6"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_7"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_8"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_91"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_92"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_93"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_94"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_95"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_96"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_97"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_98"
+        android:duration="@integer/anim_fast" />
+    <item
+        android:drawable="@drawable/gradient_radial_prime_99"
+        android:duration="@integer/anim_fast" />
+</animation-list>

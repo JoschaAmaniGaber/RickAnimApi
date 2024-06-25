@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <solid android:color="@color/primary" />
+
+
+    <gradient
+        android:gradientRadius="64dp"
+        android:type="radial"
+        android:startColor="@color/secondary"
+        android:endColor="@color/primary"
+        />
+
+    <stroke
+        android:width="@dimen/stroke_large"
+        android:color="@color/blue" />
+
+    <corners android:radius="@dimen/corners" />
+
+</shape>

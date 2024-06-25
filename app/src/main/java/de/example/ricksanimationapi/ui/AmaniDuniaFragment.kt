@@ -27,8 +27,10 @@ class AmaniDuniaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         if (animMode) startAnim()
         else noAnim()
+
     }
 
     private fun noAnim() {

@@ -5,10 +5,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import de.example.ricksanimationapi.MainViewModel
+import de.example.ricksanimationapi.R
 import de.example.ricksanimationapi.anims.animMode
 import de.example.ricksanimationapi.anims.animRoundStartVerySlow
 import de.example.ricksanimationapi.anims.animsRoundFast
@@ -66,10 +68,8 @@ class WelcomeFragment : Fragment() {
         val animListFast: List<AnimationDrawable> = listOf(animRick, animAmani)
         animsRoundFast(animListFast)
 
-        val animRickBorder: AnimationDrawable =
-            binding.clWelcomeRickBorder.background as AnimationDrawable
-        val animAmaniBorder: AnimationDrawable =
-            binding.clWelcomeAmaniBorder.background as AnimationDrawable
+        val animRickBorder = binding.clWelcomeRickBorder.background as AnimationDrawable
+        val animAmaniBorder: AnimationDrawable = binding.clWelcomeAmaniBorder.background as AnimationDrawable
         val animListVerySlow: List<AnimationDrawable> = listOf(animRickBorder, animAmaniBorder)
         animsRoundSlow(animListVerySlow)
     }

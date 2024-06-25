@@ -20,4 +20,6 @@
     <string name="iv_welcome_rick">ImageView Welcome Rick</string>
     <string name="iv_welcome_amani">ImageView Welcome Amani</string>
     <string name="rick_database_check_header">Rick Database Check Header</string>
+    <string name="database_status">Database Status</string>
+    <string name="character_database">Character Database</string>
 </resources>

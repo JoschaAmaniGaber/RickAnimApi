@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="small_dp">8dp</dimen>
-    <dimen name="medium_dp">16dp</dimen>
-    <dimen name="large_dp">32dp</dimen>
-    <dimen name="radius_l_88">888dp</dimen>
+    <!-- 0dp -->
+    <dimen name="zero">0dp</dimen>
+
+    <!-- Margin Values -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+
+    <!-- Stroke Width Values -->
+    <dimen name="stroke_small">1.11dp</dimen>
+    <dimen name="stroke_medium">2.22dp</dimen>
+    <dimen name="stroke_large">3.33dp</dimen>
+
+    <!-- Corner Radius -->
+    <dimen name="corners">8dp</dimen>
 
 </resources>

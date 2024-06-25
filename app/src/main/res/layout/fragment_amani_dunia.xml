@@ -26,7 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/picture_me" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="4dp"
-        android:background="@drawable/anim_round_very_slow"
+        android:background="@drawable/anim_round_very_slow_prime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,13 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/transparent"
-            app:cardCornerRadius="@dimen/small_dp"
+            app:cardCornerRadius="@dimen/margin_small"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:strokeColor="@color/secondary"
-            app:strokeWidth="1dp">
+            app:strokeWidth="@dimen/stroke_small">
 
             <ImageView
                 android:id="@+id/iv_picture_me"
@@ -69,22 +68,22 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/mc_amani_header"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/zero"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margin_medium"
         android:backgroundTint="@color/transparent"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="@dimen/corners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@color/secondary"
-        app:strokeWidth="1dp">
+        app:strokeWidth="@dimen/stroke_small">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_amani_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/anim_round_fast"
+            android:background="@drawable/anim_round_fast_prime"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -103,7 +102,7 @@
                 android:id="@+id/iv_amani_header"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:paddingHorizontal="8dp"
+                android:paddingHorizontal="@dimen/margin_small"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -120,9 +119,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="@dimen/medium_dp"
+        android:layout_marginTop="@dimen/margin_medium"
         android:backgroundTint="@color/transparent"
-        app:cardCornerRadius="@dimen/small_dp"
+        app:cardCornerRadius="@dimen/margin_small"
         app:layout_constraintBottom_toTopOf="@id/mc_amani_details"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mc_amani_header"
@@ -133,7 +132,7 @@
             android:id="@+id/cl_amani_links"
             android:layout_width="156dp"
             android:layout_height="256dp"
-            android:background="@drawable/anim_round_fast">
+            android:background="@drawable/anim_round_fast_prime">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -151,23 +150,23 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/mc_amani_details"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/large_dp"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:layout_margin="@dimen/margin_large"
         android:backgroundTint="@color/transparent"
-        app:cardCornerRadius="@dimen/small_dp"
+        app:cardCornerRadius="@dimen/margin_small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mc_amani_links"
         app:strokeColor="@color/secondary"
-        app:strokeWidth="1.5dp">
+        app:strokeWidth="@dimen/stroke_small">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_amani_details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/anim_round_fast">
+            android:background="@drawable/anim_round_fast_prime">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

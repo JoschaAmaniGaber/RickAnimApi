@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="anim_status_alive">3333</integer>
 
+    <!-- Animation Times in Milliseconds -->
     <integer name="anim_fast">1111</integer>
     <integer name="anim_slow">3333</integer>
     <integer name="anim_very_slow">8888</integer>
+
+    <!-- Shadow Radius -->
+    <integer name="text_shadow">21</integer>
+
+    <!-- Alpha Values -->
+    <integer name="alpha_no_anim">0</integer>
 
 </resources>

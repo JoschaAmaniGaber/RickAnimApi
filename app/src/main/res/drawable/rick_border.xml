@@ -5,5 +5,5 @@
         android:color="@color/rick" />
 
     <corners
-        android:radius="@dimen/small_dp" />
+        android:radius="@dimen/margin_small" />
 </shape>

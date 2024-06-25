@@ -2,15 +2,15 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
     <gradient
-        android:startColor="@color/grad_start_prime"
+        android:angle="180"
         android:centerColor="@color/primary"
         android:endColor="@color/grad_end_prime"
-        android:angle="180" />
+        android:startColor="@color/grad_start_prime" />
 
     <stroke
-        android:color="@color/secondary"
-        android:width="3dp" />
+        android:width="@dimen/stroke_large"
+        android:color="@color/secondary" />
 
-    <corners android:radius="8dp" />
+    <corners android:radius="@dimen/corners" />
 
 </shape>
