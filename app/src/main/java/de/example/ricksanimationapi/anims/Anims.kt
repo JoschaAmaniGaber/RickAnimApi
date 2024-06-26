@@ -30,11 +30,11 @@ fun animsRoundSlow(animList: List<AnimationDrawable>) {
     }
 }
 
-fun animsRoundVerySlow(animWelcomeList: List<AnimationDrawable>) {
+fun animsRoundVerySlow(animList: List<AnimationDrawable>) {
     var anim: AnimationDrawable
 
-    repeat(animWelcomeList.size) {
-        anim = animWelcomeList[it]
+    repeat(animList.size) {
+        anim = animList[it]
         anim.setEnterFadeDuration(timeLinearStart)
         anim.setExitFadeDuration(timeVerySlow)
         anim.start()
@@ -51,4 +51,21 @@ fun animRoundStartVerySlow(anim: AnimationDrawable) {
     anim.setEnterFadeDuration(timeVerySlow)
     anim.setExitFadeDuration(timeVerySlow)
     anim.start()
+}
+
+fun animRoundStartFast(anim: AnimationDrawable) {
+    anim.setEnterFadeDuration(timeLinearStart)
+    anim.setExitFadeDuration(timeFast)
+    anim.start()
+}
+
+fun animBallFast(animList: List<AnimationDrawable> ) {
+    var anim: AnimationDrawable
+
+    repeat(animList.size) {
+        anim = animList[it]
+        anim.setEnterFadeDuration(timeLinearStart)
+        anim.setExitFadeDuration(timeFast)
+        anim.start()
+    }
 }

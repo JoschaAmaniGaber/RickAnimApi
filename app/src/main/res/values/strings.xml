@@ -22,4 +22,5 @@
     <string name="rick_database_check_header">Rick Database Check Header</string>
     <string name="database_status">Database Status</string>
     <string name="character_database">Character Database</string>
+    <string name="fab" />
 </resources>

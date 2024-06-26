@@ -3,17 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:drawable="@drawable/gradient_linear_1"
+        android:drawable="@drawable/grad_ball_01"
         android:duration="@integer/anim_slow" />
 
     <item
-        android:drawable="@drawable/gradient_linear_3"
+        android:drawable="@drawable/grad_ball_02"
         android:duration= "@integer/anim_slow" />
 
     <item
-        android:drawable="@drawable/gradient_linear_2"
+        android:drawable="@drawable/grad_ball_03"
         android:duration= "@integer/anim_slow" />
-
-
 
 </animation-list>

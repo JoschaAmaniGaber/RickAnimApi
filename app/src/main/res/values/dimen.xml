@@ -5,14 +5,15 @@
     <dimen name="zero">0dp</dimen>
 
     <!-- Margin Values -->
+    <dimen name="margin_mini">4dp</dimen>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
     <dimen name="margin_large">32dp</dimen>
 
     <!-- Stroke Width Values -->
-    <dimen name="stroke_small">1.11dp</dimen>
-    <dimen name="stroke_medium">2.22dp</dimen>
-    <dimen name="stroke_large">3.33dp</dimen>
+    <dimen name="strokeSmall">1.11dp</dimen>
+    <dimen name="strokeMedium">2.22dp</dimen>
+    <dimen name="strokeLarge">3.33dp</dimen>
 
     <!-- Corner Radius -->
     <dimen name="corners">8dp</dimen>

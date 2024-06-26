@@ -10,11 +10,12 @@
         android:gradientRadius="2dp"
         android:type="radial"
         android:startColor="@color/secondary"
+        android:centerColor="@color/green"
         android:endColor="@color/primary"
         />
 
     <stroke
-        android:width="@dimen/stroke_large"
+        android:width="@dimen/strokeLarge"
         android:color="@color/secondary" />
 
     <corners android:radius="@dimen/corners" />

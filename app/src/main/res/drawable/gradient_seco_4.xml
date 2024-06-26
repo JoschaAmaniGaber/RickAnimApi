@@ -8,7 +8,7 @@
         android:startColor="@color/grad_start_prime" />
 
     <stroke
-        android:width="@dimen/stroke_large"
+        android:width="@dimen/strokeLarge"
         android:color="@color/secondary" />
 
     <corners android:radius="@dimen/corners" />

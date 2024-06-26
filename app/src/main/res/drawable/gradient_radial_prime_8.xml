@@ -14,7 +14,7 @@
         />
 
     <stroke
-        android:width="@dimen/stroke_large"
+        android:width="@dimen/strokeLarge"
         android:color="@color/red" />
 
     <corners android:radius="@dimen/corners" />

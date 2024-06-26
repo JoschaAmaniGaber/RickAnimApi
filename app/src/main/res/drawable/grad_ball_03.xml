@@ -7,10 +7,11 @@
 
 
     <gradient
-        android:gradientRadius="8192dp"
+        android:gradientRadius="208sp"
         android:type="radial"
-        android:startColor="@color/secondary"
-        android:endColor="@color/primary"
+        android:startColor="@color/green"
+        android:centerColor="@color/blue"
+        android:endColor="@color/red"
         />
 
     <stroke

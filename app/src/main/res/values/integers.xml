@@ -7,7 +7,10 @@
     <integer name="anim_very_slow">8888</integer>
 
     <!-- Shadow Radius -->
-    <integer name="text_shadow">21</integer>
+    <integer name="text_shadow_mini">1</integer>
+    <integer name="text_shadow_small">3</integer>
+    <integer name="text_shadow_medium">8</integer>
+    <integer name="text_shadow_large">21</integer>
 
     <!-- Alpha Values -->
     <integer name="alpha_no_anim">0</integer>

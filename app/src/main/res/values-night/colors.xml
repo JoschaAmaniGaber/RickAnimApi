@@ -23,8 +23,5 @@
     <color name="grad_center_prime_b">#00F8F8F8</color>
     <color name="grad_end_prime">#00F8F8F8</color>
 
-    <color name="red">#D50F00</color>
-    <color name="green">#008800</color>
-    <color name="orange">#FF5722</color>
-    <color name="blue">#00BCD4</color>
+
 </resources>
