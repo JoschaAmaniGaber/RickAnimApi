@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/anim_rick"
+        android:layout_width="384sp"
+        android:layout_height="222sp"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@drawable/anim_radial_bw_fast"
+        android:clickable="true"
+        android:contentDescription="@string/bt_welcome_rick"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_welcome_rick"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/anim_rick"
+        app:layout_constraintEnd_toEndOf="@id/anim_rick"
+        app:layout_constraintStart_toStartOf="@id/anim_rick"
+        app:layout_constraintTop_toTopOf="@id/anim_rick">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_anim_off_planet_rick"
+            android:alpha="0.69"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/gradient_radial_prime_7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_welcome_ball_rick"
+            android:alpha="0.08"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/anim_linear_slow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_welcome_rick"
+            android:layout_width="196dp"
+            android:layout_height="128dp"
+            android:contentDescription="@string/iv_welcome_rick"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rick_and_morty" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/anim_amani"
+        android:layout_width="192dp"
+        android:layout_height="64dp"
+        android:layout_margin="@dimen/margin_large"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/anim_round_very_slow_seco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_welcome_amani"
+            android:layout_width="196sp"
+            android:layout_height="128sp"
+            android:contentDescription="@string/iv_welcome_amani"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/amani_dunia_apps" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

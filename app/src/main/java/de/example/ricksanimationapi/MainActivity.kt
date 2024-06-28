@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import de.example.ricksanimationapi.anims.animLinearStartVerySlow
 import de.example.ricksanimationapi.anims.animMode
+import de.example.ricksanimationapi.anims.animRoundStartFast
 import de.example.ricksanimationapi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,18 +24,24 @@ class MainActivity : AppCompatActivity() {
                 binding.fragmentContainerView.findNavController().navigateUp()
             }
         })
-
-        if (animMode) startAnim()
-        else noAnim()
     }
-
-    private fun noAnim() {
-        binding.animMainBg.alpha = 0f
-    }
-
-    private fun startAnim() {
-        val animBg: AnimationDrawable = binding.animMainBg.background as AnimationDrawable
-        animLinearStartVerySlow(animBg)
-    }
-
 }
+
+
+
+/**
+ * if (animMode) startAnim()
+ * else noAnim()
+private fun noAnim() {
+binding.animMainBg.alpha = 0f
+}
+
+private fun startAnim() {
+val animBg: AnimationDrawable = binding.animMainBg.background as AnimationDrawable
+animLinearStartVerySlow(animBg)
+val animLinear: AnimationDrawable = binding.animMainLinear.background as AnimationDrawable
+animLinearStartVerySlow(animLinear)
+val animFast: AnimationDrawable = binding.animMainFast.background as AnimationDrawable
+animRoundStartFast(animFast)
+}
+ */

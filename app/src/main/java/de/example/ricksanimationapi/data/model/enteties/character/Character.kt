@@ -1,37 +1,49 @@
 package de.example.ricksanimationapi.data.model.enteties.character
 
+import android.util.Log
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
+import de.example.ricksanimationapi.TAG
 import java.net.URI
 
 @Entity(tableName = "characters")
 data class Character(
 
     @PrimaryKey
-    @Json(name = "id") val cha_id: Int,
-    @Json(name = "name") val cha_name: String,
-    @Json(name = "status") val cha_status: String,
-    @Json(name = "species") val cha_species: String,
-    @Json(name = "type") val cha_type: String,
-    @Json(name = "gender") val cha_gender: String,
-    @Json(name = "image") val cha_image: String,
-    @Json(name = "url") val cha_url: String,
-    @Json(name = "created") val cha_created: String,
-    @Embedded @Json(name = "origin") val cha_origin: ChaOrigin,
-    @Embedded @Json(name = "location") val cha_location: ChaLocation,
+    @Json(name = "id") val chaId: Int,
+    @Json(name = "name") val chaName: String,
+    @Json(name = "status") val chaStatus: String,
+    @Json(name = "species") val chaSpecies: String,
+    @Json(name = "type") val chaType: String,
+    @Json(name = "gender") val chaGender: String,
+    @Json(name = "image") val chaImage: String,
+    @Json(name = "url") val chaUrl: String,
+    @Json(name = "created") val chaCreated: String,
+    @Embedded @Json(name = "origin") val chaOrigin: ChaOrigin,
+    @Embedded @Json(name = "location") val chaLocation: ChaLocation,
 )
 
+/**
+ * @param url takes the Url of Character, Location or Episode
+ * and extrect everything before the last / if their is no number
+ *
+ */
 fun extractIdFromLocationUrl(url: String): Int {
-    if (url != "") {
-        val uri = URI(url)
-        val path = uri.path
-        val idStr = path.substring(path.lastIndexOf('/') + 1)
-        val id = idStr.toInt()
 
-        return id
-    } else return 0
+    try {
+        if (url != "") {
+            val uri = URI(url)
+            val path = uri.path
+            val idStr = path.substring(path.lastIndexOf('/') + 1)
+            val id = idStr.toInt()
+            return id
+        } else return 0
+    } catch (e: Exception) {
+        Log.e(TAG, "|| Could not extrect Id. Exception: $e")
+        return 88888
+    }
 }
 
 

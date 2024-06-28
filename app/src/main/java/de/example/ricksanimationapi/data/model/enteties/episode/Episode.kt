@@ -22,13 +22,13 @@ data class Episode(
 )
 
 data class EpisodeResults(
-    @Json(name = "info") val epi_info: EpisodeInfo,
+    @Json(name = "info") val epiInfo: EpisodeInfo,
     @Json(name = "results") val epi_results: List<Episode>
 )
 
 
 data class EpisodeInfo(
-    @Json(name = "count") val epi_count: Int,
+    @Json(name = "count") val epiCount: Int,
     @Json(name = "pages") val epi_pages: Int,
     @Json(name = "next") val epi_nextPage: String?,
     @Json(name = "prev") val epi_previousPage: String?

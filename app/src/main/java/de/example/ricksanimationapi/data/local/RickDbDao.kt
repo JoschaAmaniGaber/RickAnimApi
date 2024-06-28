@@ -7,35 +7,35 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import de.example.ricksanimationapi.data.model.enteties.episode.Episode
-import com.example.rickandmortyguide.data.model.location.Location
-import com.example.rickandmortyguide.data.model.location.LocationWithCharacters
 import de.example.ricksanimationapi.data.model.enteties.character.Character
 import de.example.ricksanimationapi.data.model.enteties.crossref.CharacterEpisodeCrossRef
+import de.example.ricksanimationapi.data.model.enteties.location.Location
+import de.example.ricksanimationapi.data.model.enteties.location.LocationWithCharacters
 
 @Dao
 interface RickDbDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertCharacter(character: Character)
+    suspend fun insertAllCharacter(characters: List<Character>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertLocation(location: Location)
+    suspend fun insertAllLocations(locations: List<Location>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertEpisode(episode: Episode)
+    suspend fun insertAllEpisodes(episodes: List<Episode>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCharacterEpisodeCrossRef(characterEpisodeCrossRef: CharacterEpisodeCrossRef)
 
     @Transaction
-    @Query("select * from locations where lo_name = :lo_name")
-    suspend fun getLocationWithCharacters(lo_name: String): List<LocationWithCharacters>
+    @Query("select * from locations where loId = :loId")
+    suspend fun getLocationWithCharacters(loId: Int): List<LocationWithCharacters>
 
     @Transaction
     @Query("select * from characters")
     fun getAllCharacters(): LiveData<List<Character>>
 
-    @Transaction
+
     @Query("select * from episodes")
     fun getAllEpisodes(): LiveData<List<Episode>>
 

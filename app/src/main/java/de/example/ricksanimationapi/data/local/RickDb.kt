@@ -5,18 +5,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import de.example.ricksanimationapi.data.model.enteties.episode.Episode
-import com.example.rickandmortyguide.data.model.location.Location
+import de.example.ricksanimationapi.data.model.enteties.location.Location
 import de.example.ricksanimationapi.data.model.enteties.character.Character
 import de.example.ricksanimationapi.data.model.enteties.crossref.CharacterEpisodeCrossRef
 
 @Database(
+    version = 1,
     entities = [
         Character::class,
         Location::class,
         Episode::class,
         CharacterEpisodeCrossRef::class
-    ],
-    version = 1
+    ]
 )
 abstract class RickDb : RoomDatabase() {
 

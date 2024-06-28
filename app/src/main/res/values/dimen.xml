@@ -18,4 +18,15 @@
     <!-- Corner Radius -->
     <dimen name="corners">8dp</dimen>
 
+    <!-- Size -->
+    <dimen name="infinity">8dp</dimen>
+    <dimen name="infinity2">88dp</dimen>
+    <dimen name="infinity3">888dp</dimen>
+    <dimen name="infinity4">8888dp</dimen>
+
+    <dimen name="db_height">64dp</dimen>
+    <dimen name="fourteeight">48dp</dimen>
+
+
+
 </resources>

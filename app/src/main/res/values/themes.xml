@@ -2,7 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.RicksAnimationApi" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/secondary</item>
+        <item name="colorSecondary">@color/gray</item>
+        <item name="fontFamily">@font/architects_daughter</item>
+        <item name="textFillColor">@color/secondary</item>
+        <item name="textOutlineColor">@color/rick</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:shadowRadius">@integer/text_shadow_small</item>
+
     </style>
 
     <style name="Theme.RicksAnimationApi" parent="Base.Theme.RicksAnimationApi" />

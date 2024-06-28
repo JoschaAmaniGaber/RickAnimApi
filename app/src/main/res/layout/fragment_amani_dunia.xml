@@ -9,8 +9,19 @@
         android:id="@+id/cl_rick_db_bg_no_anim"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0"
-        android:background="@drawable/gradient_prime"
+        android:alpha="1"
+        android:background="@drawable/anim_ball_slow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/anim_amani_radial_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.88"
+        android:background="@drawable/anim_radial_bw_fast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,156 +39,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/picture_me" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_rick_db_bg_inside"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="4dp"
-        android:background="@drawable/anim_round_very_slow_prime"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/transparent"
-            app:cardCornerRadius="@dimen/margin_small"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:strokeColor="@color/secondary"
-            app:strokeWidth="@dimen/stroke_small">
-
-            <ImageView
-                android:id="@+id/iv_picture_me"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.53"
-                android:scaleType="centerCrop"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/picture_me" />
-
-        </com.google.android.material.card.MaterialCardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/mc_amani_header"
-        android:layout_width="@dimen/zero"
+    <ImageView
+        android:id="@+id/iv_amani_header"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
-        android:backgroundTint="@color/transparent"
-        app:cardCornerRadius="@dimen/corners"
+        android:background="@drawable/anim_round_fast_prime"
+        android:padding="@dimen/margin_large"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/secondary"
-        app:strokeWidth="@dimen/stroke_small">
+        app:srcCompat="@drawable/amani_dunia_apps" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_amani_header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/anim_round_fast_prime"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.53"
-                android:background="@color/primary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/iv_amani_header"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:paddingHorizontal="@dimen/margin_small"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/amani_dunia_apps" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/mc_amani_links"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:backgroundTint="@color/transparent"
-        app:cardCornerRadius="@dimen/margin_small"
-        app:layout_constraintBottom_toTopOf="@id/mc_amani_details"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mc_amani_header"
-        app:strokeColor="@color/secondary"
-        app:strokeWidth="1.5dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_amani_links"
-            android:layout_width="156dp"
-            android:layout_height="256dp"
-            android:background="@drawable/anim_round_fast_prime">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.88"
-                android:background="@color/primary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/mc_amani_details"
-        android:layout_width="@dimen/zero"
-        android:layout_height="@dimen/zero"
-        android:layout_margin="@dimen/margin_large"
-        android:backgroundTint="@color/transparent"
-        app:cardCornerRadius="@dimen/margin_small"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mc_amani_links"
-        app:strokeColor="@color/secondary"
-        app:strokeWidth="@dimen/stroke_small">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_amani_details"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/anim_round_fast_prime">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.88"
-                android:background="@color/primary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

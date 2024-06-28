@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_anim_mode"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/anim_round_very_slow_seco"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="@string/animation_mode"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_color_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rick_morty" />
+
+    <TextView
+        android:id="@+id/tv_color_mode"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/anim_linear_slow"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="@string/color_mode"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_anim_color_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_anim_mode" />
+
+    <TextView
+        android:id="@+id/tv_anim_color_mode"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/anim_ball_slow"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="Anim Color Mode"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

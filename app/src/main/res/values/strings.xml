@@ -23,4 +23,15 @@
     <string name="database_status">Database Status</string>
     <string name="character_database">Character Database</string>
     <string name="fab" />
+    <string name="welcome_2">Welcome 2</string>
+    <string name="color_mode">Color Mode</string>
+    <string name="animation_mode">Animation Mode</string>
+    <string name="_826">826</string>
+    <string name="episode_db">Episode Database</string>
+    <string name="locations">Locations</string>
+    <string name="episodes">Episodes</string>
+    <string name="api">API</string>
+    <string name="db">Db</string>
+    <string name="download_locations">Download Locations</string>
+    <string name="download">Download</string>
 </resources>

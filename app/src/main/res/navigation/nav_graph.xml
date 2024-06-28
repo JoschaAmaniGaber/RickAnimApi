@@ -3,45 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/halloFragment">
 
     <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="de.example.ricksanimationapi.ui.WelcomeFragment"
-        android:label="WelcomeFragment"
-        tools:layout="@layout/fragment_welcome" >
+        android:id="@+id/startFragment"
+        android:name="de.example.ricksanimationapi.ui.start.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start" />
+
+    <fragment
+        android:id="@+id/amaniDuniaFragment"
+        android:name="de.example.ricksanimationapi.ui.start.AmaniDuniaFragment"
+        android:label="AmaniDuniaFragment"
+        tools:layout="@layout/fragment_amani_dunia" />
+
+    <fragment
+        android:id="@+id/dbCheckFragment"
+        android:name="de.example.ricksanimationapi.ui.rick.DbCheckFragment"
+        android:label="DbCheckFragment"
+        tools:layout="@layout/fragment_db_check" />
+
+    <fragment
+        android:id="@+id/halloFragment"
+        android:name="de.example.ricksanimationapi.ui.start.HalloFragment"
+        android:label="HalloFragment"
+        tools:layout="@layout/fragment_hallo" />
+
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="de.example.ricksanimationapi.ui.rick.CharacterFragment"
+        android:label="CharacterFragment"
+        tools:layout="@layout/fragment_character" >
         <action
-            android:id="@+id/to_amaniDuniaFragment"
-            app:destination="@id/amaniDuniaFragment"
+            android:id="@+id/to_chaDetailFragment"
+            app:destination="@id/characterDetailFragment"
             app:enterAnim="@anim/scale_up_from_down_left"
             app:exitAnim="@anim/scale_down_to_down_left"
             app:popEnterAnim="@anim/scale_up_from_down_left"
             app:popExitAnim="@anim/scale_down_to_down_left" />
-        <action
-            android:id="@+id/to_rickDbCheckFragment"
-            app:destination="@id/rickDbCheckFragment"
-            app:enterAnim="@anim/scale_up_from_up_left"
-            app:exitAnim="@anim/scale_down_to_up_left"
-            app:popEnterAnim="@anim/scale_up_from_up_left"
-            app:popExitAnim="@anim/scale_down_to_up_left" />
     </fragment>
-
     <fragment
-        android:id="@+id/amaniDuniaFragment"
-        android:name="de.example.ricksanimationapi.ui.AmaniDuniaFragment"
-        android:label="AmaniDuniaFragment"
-        tools:layout="@layout/fragment_amani_dunia"/>
+        android:id="@+id/characterDetailFragment"
+        android:name="de.example.ricksanimationapi.ui.rick.CharacterDetailFragment"
+        android:label="CharacterDetailFragment"
+        tools:layout="@layout/fragment_character_detail"/>
 
-    <fragment
-        android:id="@+id/rickDbCheckFragment"
-        android:name="de.example.ricksanimationapi.ui.RickDbCheckFragment"
-        android:label="RickDbCheckFragment"
-        tools:layout="@layout/fragment_rick_db_check"/>
-
-    <action
-        android:id="@+id/action_nav_graph_self"
-        app:enterAnim="@anim/nav_default_enter_anim"
-        app:exitAnim="@anim/nav_default_exit_anim"
-        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
 </navigation>

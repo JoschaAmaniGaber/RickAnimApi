@@ -1,25 +1,42 @@
 package de.example.ricksanimationapi.data.remote
 
-enum class ApiStatusCharacter {
-    LOADING,
-    API_ERROR,
-    API_DONE,
-    DB_ERROR,
-    DB_DONE,
+enum class ApiStatus {
+
+    CHARACTER_LOADING,
+    CHARACTER_API_ERROR,
+    CHARACTER_API_DONE,
+    CHARACTER_DB_ERROR,
+    CHARACTER_PAGE_DONE,
+    CHARACTER_DB_DONE,
+
+    LOCATION_LOADING,
+    LOCATION_API_ERROR,
+    LOCATION_API_DONE,
+    LOCATION_DB_ERROR,
+    LOCATION_PAGE_DONE,
+    LOCATION_DB_DONE,
+
+    EPISODE_LOADING,
+    EPISODE_API_ERROR,
+    EPISODE_API_DONE,
+    EPISODE_DB_ERROR,
+    EPISODE_PAGE_DONE,
+    EPISODE_DB_DONE,
+
+    INFO_LOADING,
+    INFO_ERROR,
+    INFO_DONE
+
 }
 
 enum class ApiStatusLocation {
-    LOADING,
-    API_ERROR,
-    API_DONE,
-    DB_ERROR,
-    DB_DONE,
+
+
+
+
+
 }
 
 enum class ApiStatusEpisode {
-    LOADING,
-    API_ERROR,
-    API_DONE,
-    DB_ERROR,
-    DB_DONE,
+
 }
