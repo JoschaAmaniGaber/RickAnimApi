@@ -6,8 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import de.example.ricksanimationapi.R
-import de.example.ricksanimationapi.anims.animRoundStartFast
+import de.example.ricksanimationapi.anims.animLinearStartSlow
 import de.example.ricksanimationapi.data.model.enteties.character.Character
 import de.example.ricksanimationapi.databinding.ItemCharacterBinding
 
@@ -47,9 +46,8 @@ class CharacterAdapter(
                 onSelectCharacter(character)
             }
 
-
             var animStatus: AnimationDrawable = statusBackground.background as AnimationDrawable
-            animRoundStartFast(animStatus)
+            animLinearStartSlow(animStatus)
 
         }
     }

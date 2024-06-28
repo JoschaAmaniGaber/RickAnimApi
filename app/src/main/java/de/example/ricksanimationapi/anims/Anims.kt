@@ -47,7 +47,7 @@ fun animLinearStartVerySlow(anim: AnimationDrawable) {
     anim.start()
 }
 fun animLinearStartSlow(anim: AnimationDrawable) {
-    anim.setEnterFadeDuration(timeLinearStart)
+    anim.setEnterFadeDuration(timeSlow)
     anim.setExitFadeDuration(timeSlow)
     anim.start()
 }

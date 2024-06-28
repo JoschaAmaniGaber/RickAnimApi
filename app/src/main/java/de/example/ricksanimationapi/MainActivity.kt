@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
                 binding.fragmentContainerView.findNavController().navigateUp()
             }
         })
+        val animBg: AnimationDrawable = binding.animMainBg.background as AnimationDrawable
+        animLinearStartVerySlow(animBg)
     }
 }
 
@@ -36,9 +38,7 @@ private fun noAnim() {
 binding.animMainBg.alpha = 0f
 }
 
-private fun startAnim() {
-val animBg: AnimationDrawable = binding.animMainBg.background as AnimationDrawable
-animLinearStartVerySlow(animBg)
+
 val animLinear: AnimationDrawable = binding.animMainLinear.background as AnimationDrawable
 animLinearStartVerySlow(animLinear)
 val animFast: AnimationDrawable = binding.animMainFast.background as AnimationDrawable

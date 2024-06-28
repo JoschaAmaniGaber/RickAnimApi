@@ -12,35 +12,12 @@
         android:id="@+id/anim_main_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/anim_ball_very_slow"
+        android:background="@drawable/anim_linear_very_slow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/anim_main_linear"
-            android:alpha="0.53"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/anim_linear_slow"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"  />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/anim_main_fast"
-            android:alpha="0.53"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/anim_radial_bw_fast"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"  />
+        >
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
