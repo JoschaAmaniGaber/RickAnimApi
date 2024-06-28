@@ -34,4 +34,5 @@
     <string name="db">Db</string>
     <string name="download_locations">Download Locations</string>
     <string name="download">Download</string>
+    <string name="anim_color_mode">Anim Color Mode</string>
 </resources>

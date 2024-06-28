@@ -5,7 +5,6 @@
 
     <solid android:color="@color/primary" />
 
-
     <gradient
         android:gradientRadius="21sp"
         android:type="radial"

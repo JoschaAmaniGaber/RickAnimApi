@@ -9,7 +9,15 @@
         android:id="@+id/startFragment"
         android:name="de.example.ricksanimationapi.ui.start.StartFragment"
         android:label="StartFragment"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_dbCheckFragment"
+            app:destination="@id/dbCheckFragment"
+            app:enterAnim="@anim/scale_up_from_down_right"
+            app:exitAnim="@anim/scale_down_to_down_left"
+            app:popEnterAnim="@anim/scale_up_from_down_right"
+            app:popExitAnim="@anim/scale_down_to_down_right" />
+    </fragment>
 
     <fragment
         android:id="@+id/amaniDuniaFragment"
@@ -21,13 +29,29 @@
         android:id="@+id/dbCheckFragment"
         android:name="de.example.ricksanimationapi.ui.rick.DbCheckFragment"
         android:label="DbCheckFragment"
-        tools:layout="@layout/fragment_db_check" />
+        tools:layout="@layout/fragment_db_check" >
+        <action
+            android:id="@+id/to_characterFragment"
+            app:destination="@id/characterFragment"
+            app:enterAnim="@anim/scale_up_from_down_right"
+            app:exitAnim="@anim/scale_down_to_down_right"
+            app:popEnterAnim="@anim/scale_up_from_down_right"
+            app:popExitAnim="@anim/scale_down_to_down_right" />
+    </fragment>
 
     <fragment
         android:id="@+id/halloFragment"
         android:name="de.example.ricksanimationapi.ui.start.HalloFragment"
         android:label="HalloFragment"
-        tools:layout="@layout/fragment_hallo" />
+        tools:layout="@layout/fragment_hallo" >
+        <action
+            android:id="@+id/to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/scale_up_from_up_left"
+            app:exitAnim="@anim/scale_down_to_up_left"
+            app:popEnterAnim="@anim/scale_up_from_up_left"
+            app:popExitAnim="@anim/scale_down_to_up_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/characterFragment"

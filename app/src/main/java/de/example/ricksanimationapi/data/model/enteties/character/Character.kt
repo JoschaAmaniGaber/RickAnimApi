@@ -31,7 +31,6 @@ data class Character(
  *
  */
 fun extractIdFromLocationUrl(url: String): Int {
-
     try {
         if (url != "") {
             val uri = URI(url)

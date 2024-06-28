@@ -44,7 +44,7 @@ class StartFragment : Fragment() {
 
         binding.animAmani.setOnClickListener {
             val navController = Navigation.findNavController(binding.root)
-            val directions = R.id.amaniDuniaFragment
+            val directions = StartFragmentDirections.actionStartFragmentToDbCheckFragment()
             navController.navigate(directions)
         }
     }

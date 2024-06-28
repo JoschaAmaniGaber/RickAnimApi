@@ -31,7 +31,7 @@ class HalloFragment : Fragment() {
         binding.button.setOnClickListener {
             viewModel.loadInfo()
             val navController = Navigation.findNavController(binding.root)
-            val directions = R.id.startFragment
+            val directions = HalloFragmentDirections.toStartFragment()
             navController.navigate(directions)
         }
     }

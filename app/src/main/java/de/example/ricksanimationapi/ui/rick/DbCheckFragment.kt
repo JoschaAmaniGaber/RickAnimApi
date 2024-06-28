@@ -36,7 +36,6 @@ class DbCheckFragment : Fragment() {
 
         binding.btnLoadCharacters.setOnClickListener {
             viewModel.loadCharacters()
-            // TODO
         }
 
         binding.btnAllCharacters.setOnClickListener {
@@ -45,33 +44,6 @@ class DbCheckFragment : Fragment() {
             navController.navigate(directions)
         }
 
-        viewModel.loading.observe(viewLifecycleOwner) {
-
-            when (it) {
-                ApiStatus.CHARACTER_LOADING -> TODO()
-                ApiStatus.CHARACTER_API_ERROR -> TODO()
-                ApiStatus.CHARACTER_API_DONE -> TODO()
-                ApiStatus.CHARACTER_DB_ERROR -> TODO()
-                ApiStatus.CHARACTER_PAGE_DONE -> TODO()
-                ApiStatus.CHARACTER_DB_DONE -> TODO()
-                ApiStatus.LOCATION_LOADING -> TODO()
-                ApiStatus.LOCATION_API_ERROR -> TODO()
-                ApiStatus.LOCATION_API_DONE -> TODO()
-                ApiStatus.LOCATION_DB_ERROR -> TODO()
-                ApiStatus.LOCATION_PAGE_DONE -> TODO()
-                ApiStatus.LOCATION_DB_DONE -> TODO()
-                ApiStatus.EPISODE_LOADING -> TODO()
-                ApiStatus.EPISODE_API_ERROR -> TODO()
-                ApiStatus.EPISODE_API_DONE -> TODO()
-                ApiStatus.EPISODE_DB_ERROR -> TODO()
-                ApiStatus.EPISODE_PAGE_DONE -> TODO()
-                ApiStatus.EPISODE_DB_DONE -> TODO()
-                ApiStatus.INFO_LOADING -> TODO()
-                ApiStatus.INFO_ERROR -> TODO()
-                ApiStatus.INFO_DONE -> TODO()
-            }
-
-        }
     }
 }
 

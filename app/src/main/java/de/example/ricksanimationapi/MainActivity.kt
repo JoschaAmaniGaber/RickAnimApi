@@ -2,12 +2,12 @@ package de.example.ricksanimationapi
 
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
+import android.view.View
+import android.view.animation.AnimationUtils
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import de.example.ricksanimationapi.anims.animLinearStartVerySlow
-import de.example.ricksanimationapi.anims.animMode
-import de.example.ricksanimationapi.anims.animRoundStartFast
 import de.example.ricksanimationapi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +24,15 @@ class MainActivity : AppCompatActivity() {
                 binding.fragmentContainerView.findNavController().navigateUp()
             }
         })
+
+        startAnim()
+    }
+
+    private fun startAnim() {
+        val anim = AnimationUtils.loadAnimation(this, R.anim.scale_up_from_down_right)
+        val lottie = binding.lottiePopcorn as View
+        lottie.startAnimation(anim)
+
         val animBg: AnimationDrawable = binding.animMainBg.background as AnimationDrawable
         animLinearStartVerySlow(animBg)
     }

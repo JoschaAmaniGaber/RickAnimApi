@@ -36,7 +36,7 @@ class Repository(
         var loCount: Int = service.getLocationsPage(page).loInfo.loCount
         var epiCount: Int = service.getEpisodesPage(page).epiInfo.epiCount
         _apiCounter.postValue(TableSizeCounter(chaCount,loCount,epiCount))
-
+        Log.e(TAG, "|| All Info Count loaded")
     }
 
     // TODO suspend fun loadAnimations() {}
